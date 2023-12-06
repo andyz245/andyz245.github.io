@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models"
-date:   2023-12-15
-image: images/lats.png
+date:   2023-12-03
+image: /images/lats.png
 categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou*</strong>, Kai Yan, Michal Shlapentokh Rothman, Haohan Wang, Yuxiong Wang"

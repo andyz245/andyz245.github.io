@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Robust Prompt Optimization for Defending Language Models"
-date:   2023-12-20
+date:   2023-12-04
 image: 
 categories: research
 author: "Andy Zhou"
