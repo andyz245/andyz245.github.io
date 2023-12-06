@@ -5,7 +5,7 @@ date:   2023-12-04
 image: 
 categories: research
 author: "Andy Zhou"
-authors: "<strong>Andy Zhou*</strong>, Bo Li, Haohan Wang"
+authors: "<strong>Andy Zhou</strong>, Bo Li, Haohan Wang"
 venue: "arXiv"
 ---
 Coming soon! We formalize the first adversarial training objective for large language models which can defend against jailbreak attacks.

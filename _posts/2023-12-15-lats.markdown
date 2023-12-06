@@ -5,7 +5,7 @@ date:   2023-12-03
 image: /images/lats.png
 categories: research
 author: "Andy Zhou"
-authors: "<strong>Andy Zhou*</strong>, Kai Yan, Michal Shlapentokh Rothman, Haohan Wang, Yuxiong Wang"
+authors: "<strong>Andy Zhou</strong>, Kai Yan, Michal Shlapentokh Rothman, Haohan Wang, Yuxiong Wang"
 venue: "arXiv"
 arxiv: https://arxiv.org/abs/2310.04406
 code: https://github.com/andyz245/LanguageAgentTreeSearch
