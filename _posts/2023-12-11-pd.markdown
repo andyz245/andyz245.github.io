@@ -9,5 +9,4 @@ authors: "<strong>Andy Zhou*</strong>, Samuel Li*, Pranav Sriram*,Xiang Li*, Jia
 venue: "Conference on Neural Information Processing Systems Datasets and Benchmarks Track"
 arxiv: https://openreview.net/forum?id=AIeeXKsspI
 ---
-We propose the first public benchmark for automated Parkinson's disease analysis. We propose three tasks--facial-expression-based
-PD classification, multimodal PD classification, and PD progression synthesis--and show models trained on YouTubePD generalize to real clinical data.
+We propose the first public benchmark for automated Parkinson's disease analysis. 
