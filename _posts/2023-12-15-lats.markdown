@@ -11,5 +11,4 @@ arxiv: https://arxiv.org/abs/2310.04406
 code: https://github.com/andyz245/LanguageAgentTreeSearch
 website: https://andyz245.github.io/LanguageAgentTreeSearch/
 ---
-We propose the first public benchmark for automated Parkinson's disease analysis. We propose three tasks--facial-expression-based
-PD classification, multimodal PD classification, and PD progression synthesis--and show models trained on YouTubePD generalize to real clinical data.
+We propose the first search algorithm for LM agents, LATS, which draws upon aspects of reasoning and acting prompting methods to improve decision-making.
