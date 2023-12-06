@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "YouTubePD: A Multimodal Benchmark for Parkinson’s Disease Analysis"
+date:   2023-12
+image: /images/ytpd.png
+categories: research
+author: "Andy Zhou"
+authors: "<strong>Andy Zhou*</strong>, Samuel Li*, Pranav Sriram*,Xiang Li*, Jiahua Dong*, Ansh Sharma, Yuanyi Zhong, Shirui Luo, Volodymyr Kindratenko, George Heintz, Christopher Zallek, Yuxiong Wang"
+venue: "Conference on Neural Information Processing Systems Datasets and Benchmarks Track"
+arxiv: https://openreview.net/forum?id=AIeeXKsspI
+code: 
+website: 
+---
+We propose the first public benchmark for automated Parkinson's disease analysis. We propose three tasks--facial-expression-based
+PD classification, multimodal PD classification, and PD progression synthesis--and show models trained on YouTubePD generalize to real clinical data.
