@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "YouTubePD: A Multimodal Benchmark for Parkinson’s Disease Analysis"
-date:   2023-12
+date:   2023-12-11
 image: /images/ytpd.png
 categories: research
 author: "Andy Zhou"
