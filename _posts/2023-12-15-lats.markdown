@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models"
+date:   2023-12-15
+image: /images/lats.png
+categories: research
+author: "Andy Zhou"
+authors: "<strong>Andy Zhou*</strong>, Kai Yan, Michal Shlapentokh Rothman, Haohan Wang, Yuxiong Wang"
+venue: "arXiv"
+arxiv: https://arxiv.org/abs/2310.04406
+code: https://github.com/andyz245/LanguageAgentTreeSearch
+website: https://andyz245.github.io/LanguageAgentTreeSearch/
+---
+We propose the first public benchmark for automated Parkinson's disease analysis. We propose three tasks--facial-expression-based
+PD classification, multimodal PD classification, and PD progression synthesis--and show models trained on YouTubePD generalize to real clinical data.

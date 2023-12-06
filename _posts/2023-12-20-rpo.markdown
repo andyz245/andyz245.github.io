@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Robust Prompt Optimization for Defending Language Models"
+date:   2023-12-20
+image: 
+categories: research
+author: "Andy Zhou"
+authors: "<strong>Andy Zhou*</strong>, Bo Li, Haohan Wang"
+venue: "coming soon!"
+arxiv: 
+code: 
+website: 
+---
+We formalize the first adversarial training objective for large language models which can defend against jailbreak attacks.
