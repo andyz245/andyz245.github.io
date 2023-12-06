@@ -6,7 +6,7 @@ image: images/fedselect.png
 categories: research
 author: "Andy Zhou"
 authors: "Rishub Tamirisa, John Won, Chengjun Lu, Ron Arel,    <strong>Andy Zhou</strong>"
-venue: "International Conference on Machine Learning 2023 Workshop on Federated Learning"
+venue: "International Conference on Machine Learning Workshop on Federated Learning"
 arxiv: https://arxiv.org/abs/2306.13264
 code: 
 website: 
