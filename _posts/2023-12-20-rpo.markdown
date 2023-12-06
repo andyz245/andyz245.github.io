@@ -7,8 +7,5 @@ categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou*</strong>, Bo Li, Haohan Wang"
 venue: "coming soon!"
-arxiv: 
-code: 
-website: 
 ---
 We formalize the first adversarial training objective for large language models which can defend against jailbreak attacks.
