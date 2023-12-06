@@ -5,7 +5,7 @@ date:   2023-12-03
 image: images/ytpd.png
 categories: research
 author: "Andy Zhou"
-authors: "<strong>Andy Zhou*</strong>, Samuel Li*, Pranav Sriram*,Xiang Li*, Jiahua Dong*, Ansh Sharma, Yuanyi Zhong, Shirui Luo, Volodymyr Kindratenko, George Heintz, Christopher Zallek, Yuxiong Wang"
+authors: "<strong>Andy Zou*</strong>, Samuel Li*, Pranav Sriram*,Xiang Li*, Jiahua Dong*, Ansh Sharma, Yuanyi Zhong, Shirui Luo, Volodymyr Kindratenko, George Heintz, Christopher Zallek, Yuxiong Wang"
 venue: "Conference on Neural Information Processing Systems Datasets and Benchmarks Track"
 arxiv: https://openreview.net/forum?id=AIeeXKsspI
 ---
