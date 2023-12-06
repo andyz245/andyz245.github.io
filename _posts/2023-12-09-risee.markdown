@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "FedSelect: Customized Selection of Parameters for Fine-Tuning during Personalized Federated Learning"
-date:   2023-07-05
-image: /images/fedselect.png
+title:  "Distilling Out-of-Distribution Robustness from Vision-Language Foundation Models"
+date:   2023-12-10
+image: images/dad.png
 categories: research
 author: "Andy Zhou"
-authors: "Rishub Tamirisa, John Won, Chengjun Lu, Ron Arel,    <strong>Andy Zhou</strong>"
-venue: "International Conference on Machine Learning Workshop on Federated Learning"
-arxiv: https://arxiv.org/abs/2306.13264
+authors: "<strong>Andy Zhou</strong>, Jindong Wang, Haohan Wang, Yuxiong Wang"
+venue: "Conference on Neural Information Processing Systems"
+arxiv: https://arxiv.org/abs/2311.01441 
+code: https://github.com/andyz245/DiscreteAdversarialDistillation
 ---
-We propose a federated-learning algorithm based on selecting which parameters to use for fine-tuning and which to make global updates.
+We propose a data augmentation and knowledge distillation objective that uses teacher gradients to generate diverse samples, improving out-of-distribution robustness.

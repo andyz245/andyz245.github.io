@@ -2,7 +2,7 @@
 layout: post
 title:  "FedSelect: Customized Selection of Parameters for Fine-Tuning during Personalized Federated Learning"
 date:   2023-07-05
-image: /images/fedselect.png
+image: images/fedselect.png
 categories: research
 author: "Andy Zhou"
 authors: "Rishub Tamirisa, John Won, Chengjun Lu, Ron Arel,    <strong>Andy Zhou</strong>"
