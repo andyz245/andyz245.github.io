@@ -2,7 +2,7 @@
 layout: post
 title:  "A Sentence Speaks a Thousand Images: Domain Generalization through Distilling CLIP with Language Guidance"
 date:   2023-10-02
-image: images/rise.png
+image: images/rise.jpeg
 categories: research
 author: "Andy Zhou"
 authors: "Zeyi Huang, <strong>Andy Zhou</strong>, Zijian Lin, Mu Cai, Haohan Wang, Yong Jae Lee"
