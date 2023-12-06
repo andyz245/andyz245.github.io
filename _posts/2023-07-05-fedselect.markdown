@@ -8,5 +8,6 @@ author: "Andy Zhou"
 authors: "Rishub Tamirisa, John Won, Chengjun Lu, Ron Arel,    <strong>Andy Zhou</strong>"
 venue: "International Conference on Machine Learning Workshop on Federated Learning"
 arxiv: https://arxiv.org/abs/2306.13264
+slides: /pdfs/2306.13264.pdf
 ---
 We propose a federated-learning algorithm based on selecting which parameters to use for fine-tuning and which to make global updates.

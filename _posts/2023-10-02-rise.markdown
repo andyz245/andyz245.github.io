@@ -9,5 +9,6 @@ authors: "Zeyi Huang, <strong>Andy Zhou</strong>, Zijian Lin, Mu Cai, Haohan Wan
 venue: "International Conference on Computer Vision"
 arxiv: https://arxiv.org/abs/2309.12530v1
 code: https://github.com/OoDBag/RISE
+slides: /pdfs/2309.12530.pdf
 ---
 We propose a distillation objective based on CLIP text representations to improve domain generalization.

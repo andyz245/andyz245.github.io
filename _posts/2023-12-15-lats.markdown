@@ -10,5 +10,6 @@ venue: "arXiv"
 arxiv: https://arxiv.org/abs/2310.04406
 code: https://github.com/andyz245/LanguageAgentTreeSearch
 website: https://andyz245.github.io/LanguageAgentTreeSearch/
+slides: /pdfs/lats.pdf
 ---
 We propose the first search algorithm for LM agents which draws upon aspects of reasoning and acting prompting methods to improve decision-making.
