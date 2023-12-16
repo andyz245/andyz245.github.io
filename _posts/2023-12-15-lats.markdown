@@ -12,4 +12,4 @@ code: https://github.com/andyz245/LanguageAgentTreeSearch
 website: https://andyz245.github.io/LanguageAgentTreeSearch/
 slides: /pdfs/lats.pdf
 ---
-We propose the first search algorithm for LM agents which draws upon aspects of reasoning and acting prompting methods to improve decision-making.
+We propose the first search algorithm for LM agents which draws upon aspects of reasoning and acting prompting methods to improve decision-making. We achieve SOTA on HumanEval with a Pass@1 rate of 94.4%
