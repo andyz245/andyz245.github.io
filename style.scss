@@ -99,9 +99,25 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-td img {
+.profile-photo-cell {
+  padding: 2.5%;
+  width: 40%;
+  max-width: 300px;
+  text-align: right;
+}
+
+.profile-photo-cell img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-photo-cell {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    padding: 2.5% 0;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
