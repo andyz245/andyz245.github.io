@@ -103,13 +103,10 @@ span.highlight {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  max-width: 300px;
-  padding: 2.5%;
 }
 
-.profile-photo {
-  width: 100%;
+.profile-photo-cell img {
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -119,7 +116,7 @@ span.highlight {
 @media screen and (max-width: 600px) {
   .profile-photo-cell {
     width: 100%;
-    max-width: 200px;
+    max-width: none;
     padding: 2.5% 0;
   }
 }
