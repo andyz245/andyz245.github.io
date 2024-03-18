@@ -6,7 +6,7 @@ image: /images/pd.png
 categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou*</strong>, Samuel Li*, Pranav Sriram*,Xiang Li*, Jiahua Dong*, Ansh Sharma, Yuanyi Zhong, Shirui Luo, Volodymyr Kindratenko, George Heintz, Christopher Zallek, Yuxiong Wang"
-venue: "NeurIPS 2023 Datasets and Benchmarks"
+venue: "NeurIPS Datasets and Benchmarks"
 arxiv: https://openreview.net/forum?id=AIeeXKsspI
 slides: /pdfs/pd.pdf
 ---

@@ -6,6 +6,6 @@ image: /images/fedselect.png
 categories: research
 author: "Andy Zhou"
 authors: "Rishub Tamirisa, Chulin Xie, Wenxuan Bao, <strong>Andy Zhou</strong>, Ron Arel, Aviv Shamsian"
-venue: "CVPR 2024"
+venue: "CVPR"
 ---
 We propose a federated-learning algorithm based on selecting which parameters to use for fine-tuning and which to make global updates.

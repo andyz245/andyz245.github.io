@@ -6,7 +6,7 @@ image: /images/fedselect.png
 categories: research
 author: "Andy Zhou"
 authors: "Rishub Tamirisa, John Won, Chengjun Lu, Ron Arel,    <strong>Andy Zhou</strong>"
-venue: "Federated Learning @ ICML 2023"
+venue: "Federated Learning @ ICML"
 arxiv: https://arxiv.org/abs/2306.13264
 slides: /pdfs/2306.13264.pdf
 ---

@@ -6,6 +6,6 @@ image: /images/tbd.webp
 categories: research
 author: "Andy Zhou"
 authors: "Rishub Tamirisa, Bhrugu Bharathi, <strong>Andy Zhou</strong>, Bo Li, Mantas Mazeika"
-venue: "Secure and Trustworthy LLMs @ ICLR 2024"
+venue: "Secure and Trustworthy LLMs @ ICLR"
 ---
 We outline the setting of robust machine unlearning in LLMs for reliably removing unwanted knowledge.

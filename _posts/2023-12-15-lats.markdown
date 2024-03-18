@@ -6,7 +6,7 @@ image: /images/lats.png
 categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou</strong>, Kai Yan, Michal Shlapentokh Rothman, Haohan Wang, Yuxiong Wang"
-venue: "LLM Agents @ ICLR 2024"
+venue: "LLM Agents @ ICLR"
 arxiv: https://arxiv.org/abs/2310.04406
 code: https://github.com/andyz245/LanguageAgentTreeSearch
 website: https://andyz245.github.io/LanguageAgentTreeSearch/
