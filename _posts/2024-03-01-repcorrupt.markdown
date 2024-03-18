@@ -2,7 +2,7 @@
 layout: post
 title:  "Towards Robust Unlearning in LLMs"
 date:   2024-03-01
-image: /images/placeholder.jpeg
+image: /images/tbd.webp
 categories: research
 author: "Andy Zhou"
 authors: "Rishub Tamirisa, Bhrugu Bharathi, <strong>Andy Zhou</strong>, Bo Li, Mantas Mazeika"
