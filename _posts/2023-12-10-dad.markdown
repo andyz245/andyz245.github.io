@@ -6,7 +6,7 @@ image: /images/dad.png
 categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou</strong>, Jindong Wang, Haohan Wang, Yuxiong Wang"
-venue: "Conference on Neural Information Processing Systems"
+venue: "NeurIPS 2023"
 arxiv: https://arxiv.org/abs/2311.01441 
 code: https://github.com/andyz245/DiscreteAdversarialDistillation
 slides: /pdfs/2311.01441.pdf
