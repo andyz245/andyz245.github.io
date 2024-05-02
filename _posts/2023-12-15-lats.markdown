@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models"
-date:   2023-12-03
+date:   2024-01-01
 image: /images/lats.png
 categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou</strong>, Kai Yan, Michal Shlapentokh Rothman, Haohan Wang, Yuxiong Wang"
-venue: "LLM Agents @ ICLR"
+venue: "ICML"
 arxiv: https://arxiv.org/abs/2310.04406
 code: https://github.com/andyz245/LanguageAgentTreeSearch
 website: https://andyz245.github.io/LanguageAgentTreeSearch/
