@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AI Risk Categorization Decoded: From Corporate Policies to Government Regulations"
-date:   2023-12-03
+date:   2024-06-12
 image: /images/air.png
 categories: research
 author: "Andy Zhou"
