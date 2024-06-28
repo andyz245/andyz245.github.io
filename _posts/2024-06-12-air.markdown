@@ -6,7 +6,7 @@ image: /images/air.png
 categories: research
 author: "Andy Zhou"
 authors: "Yi Zeng*, Kevin Klyman*, <strong>Andy Zhou</strong>, Yu Yang, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, Bo Li"
-venue: "ICML 2024 on Generative AI and Law"
+venue: "ICML Workshop on Generative AI and Law"
 arxiv: https://www.arxiv.org/abs/2406.17864
 slides: /pdfs/2406.17864v1.pdf
 ---
