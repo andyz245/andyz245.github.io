@@ -3,7 +3,7 @@ layout: post
 title:  "KnowGraph: Knowledge-Enabled Anomaly Detection via Logical
 Reasoning on Graph Data"
 date:   2024-05-01
-image: /images/tbd.png
+image: /images/graphlr.png
 categories: research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou</strong>, Xiaojun Xu, Ramesh Raghunathan, Alok Lal, Xinze Guan, Bin Yu, Bo Li"
