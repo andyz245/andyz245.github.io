@@ -4,7 +4,7 @@ title:  "KnowGraph: Knowledge-Enabled Anomaly Detection via Logical
 Reasoning on Graph Data"
 date:   2024-05-01
 image: /images/graphlr.jpg
-categories: research
+categories: selected research
 author: "Andy Zhou"
 authors: "<strong>Andy Zhou</strong>, Xiaojun Xu, Ramesh Raghunathan, Alok Lal, Xinze Guan, Bin Yu, Bo Li"
 venue: "ACM Conference on Computer and Communications Security (CCS)"
