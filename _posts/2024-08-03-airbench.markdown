@@ -3,7 +3,7 @@ layout: post
 title:  "AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies"
 date:   2024-08-03
 image: /images/air.png
-categories: selectedresearch
+categories: selected
 author: "Andy Zhou"
 authors: "Yi Zeng*, Yu Yang*, <strong>Andy Zhou*</strong>, Jeffrey Tan*, Yuheng Tu*, Yifan Mai*, Kevin Klyman, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, Bo Li"
 venue: "arXiv"
