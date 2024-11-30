@@ -9,5 +9,6 @@ authors: "Yi Zeng*, Kevin Klyman*, <strong>Andy Zhou</strong>, Yu Yang, Minzhou 
 venue: "ICML Workshop on Generative AI and Law"
 arxiv: https://www.arxiv.org/abs/2406.17864
 slides: /pdfs/2406.17864v1.pdf
+article: https://www.wired.com/story/ai-models-risk-rank-studies/
 ---
 We present a comprehensive AI risk taxonomy derived from eight government policies from the European Union, United States, and China and 16 company policies worldwide, making a significant step towards establishing a unified language for generative AI safety evaluation.

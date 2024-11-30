@@ -8,5 +8,6 @@ author: "Andy Zhou"
 authors: "Yi Zeng*, Yu Yang*, <strong>Andy Zhou*</strong>, Jeffrey Tan*, Yuheng Tu*, Yifan Mai*, Kevin Klyman, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, Bo Li"
 venue: "arXiv"
 arxiv: https://arxiv.org/abs/2407.17436v2
+article: https://www.wired.com/story/ai-models-risk-rank-studies/
 ---
 We present a safety benchmark based on risk categories from regulations and policies with 5,694 diverse prompts based on 16 company policies and 8 government policies mapped into 314 risk categories.
