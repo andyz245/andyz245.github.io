@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">{{ site.location }} &middot; Intology</p>
+      <h1>{{ site.name }}</h1>
+      <p class="lede">I build AI systems that do science.</p>
+      <p>
+        I'm a co-founder of <a href="https://www.intology.ai">Intology</a>, a research lab automating the process of
+        discovery. We build Artificial Scientists: systems that read the literature, form a hypothesis, run the
+        experiments, and write up what they found — with no human in the loop.
+      </p>
+      <p>
+        Two exist so far. <a href="#work">Zochi</a> was the first AI system to pass peer review at a top-tier venue.
+        <a href="#work">Locus</a> is the first to outperform human experts at AI R&amp;D.
+      </p>
+      <p class="quiet">
+        Before Intology I did research at Meta and Virtue AI, and founded
+        <a href="https://lapis.rocks/">Lapis Labs</a>, a student-led group that published 20+ papers with collaborators
+        including Google DeepMind, the Center for AI Safety, and IBM Research.
+      </p>
+      <ul class="hero-links">
+        {% for link in site.links %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <figure class="hero-photo">
+      <img src="{{ site.avatar }}" alt="Portrait of {{ site.name }}" width="480" height="600">
+    </figure>
+  </div>
+</section>
+
+<section id="work" class="band">
+  <div class="wrap">
+    <h2 class="label">What I'm building</h2>
+    <div class="cards">
+      {% for item in site.data.work %}
+      <article class="card reveal">
+        <header class="card-head">
+          <h3>{{ item.name }}</h3>
+          <p class="card-kind">{{ item.kind }}</p>
+          <p class="card-period">{{ item.period }}</p>
+        </header>
+        <p class="card-body">{{ item.body }}</p>
+        <ul class="chips">
+          {% for stat in item.stats %}
+          <li>{{ stat }}</li>
+          {% endfor %}
+        </ul>
+        <ul class="card-links">
+          {% for link in item.links %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="research" class="band">
+  <div class="wrap">
+    <h2 class="label">Selected research</h2>
+    <p class="note">
+      Agents, robustness, and AI safety, from before Intology. The complete list lives on
+      <a href="https://scholar.google.com/citations?user=PSfZDFUAAAAJ&amp;hl=en">Google Scholar</a>.
+    </p>
+
+    <ol class="papers">
+      {% for paper in site.data.papers %}
+      {% if paper.selected %}
+      <li class="paper reveal">
+        <h3 class="paper-title">{{ paper.title }}</h3>
+        <p class="paper-meta">
+          <span class="venue">{{ paper.venue }} {{ paper.year }}</span>
+          {% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
+        </p>
+        <p class="paper-authors">{{ paper.authors }}</p>
+        {% if paper.summary %}<p class="paper-summary">{{ paper.summary }}</p>{% endif %}
+        {% if paper.links %}
+        <ul class="paper-links">
+          {% for link in paper.links %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ol>
+
+    <details class="more">
+      <summary>All publications ({{ site.data.papers | size }})</summary>
+      <ol class="papers papers-compact">
+        {% for paper in site.data.papers %}
+        {% unless paper.selected %}
+        <li class="paper">
+          <h3 class="paper-title">{{ paper.title }}</h3>
+          <p class="paper-meta">
+            <span class="venue">{{ paper.venue }} {{ paper.year }}</span>
+            {% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
+          </p>
+          <p class="paper-authors">{{ paper.authors }}</p>
+          {% if paper.links %}
+          <ul class="paper-links">
+            {% for link in paper.links %}
+            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endunless %}
+        {% endfor %}
+      </ol>
+    </details>
+  </div>
+</section>
+
+<section id="updates" class="band">
+  <div class="wrap">
+    <h2 class="label">Updates</h2>
+    <ol class="updates">
+      {% for item in site.data.news %}
+      <li class="update reveal">
+        <p class="update-date">{{ item.date | date: "%b %Y" }}</p>
+        <p class="update-text">{{ item.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

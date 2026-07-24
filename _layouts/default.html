@@ -1,363 +1,101 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-E00L9PT3V9');
-  </script>
-  <title>{{ site.name }}</title>
-
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
-  <meta name="author" content="{{ site.name }}" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <title>{{ site.name }} — {{ site.role }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="canonical" href="{{ site.url }}/">
 
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ site.name }} — {{ site.role }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}/">
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@zhouandy_">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="{{ site.avatar }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  <script>
+    // Dark by default; resolved before first paint so the page never flashes.
+    document.documentElement.dataset.theme =
+      localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}{{ site.avatar }}",
+      "jobTitle": "{{ site.role }}",
+      "description": "{{ site.description }}",
+      "worksFor": { "@type": "Organization", "name": "Intology", "url": "https://www.intology.ai" }
+    }
+  </script>
+
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                About Me
-              </h1>
-              <p>
-                I'm Andy Zhou and I'm the founder of <a href="https://intology.ai">Intology</a>, a lab studying the science of intelligence. Check out our work on <a href="https://www.intology.ai/blog/zochi-tech-report">Zochi</a>, the world's first Artificial Scientist with peer-reviewed publications.
-              </p>
-              <p>
-                I previously founded <a href="https://lapis.rocks/">Lapis Labs</a>, a student-led research group. We published more than 20 papers in top AI conferences and collaborated with many groups, including DeepMind, the Center for AI Safety, and IBM Research.
-              </p>
-              <p style="text-align:center">
-                <a target="_blank" href="andy@intology.ai"> Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/andyz245">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=PSfZDFUAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://twitter.com/zhouandy_"> Twitter </a>
-              </p>
-            </td>
-            <td class="profile-photo-cell">
-              <img alt="profile photo" src="images/pfp2024.jpeg">
-            </td>
-          </tr>
-        </table>
+  <a class="skip" href="#main">Skip to content</a>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                My research focuses on advancing artificial intelligence with an emphasis on:
-              </p>
-              <ul>
-                <li>AI agents and autonomous systems</li>
-                <li>AI safety and alignment</li>
-                <li>Scientific discovery through AI</li>
-              </ul>
-              <p>
-                I'm particularly interested in developing AI systems that can reason, learn, and discover in ways that augment human capabilities and advance scientific knowledge. Check out my papers <a href="https://scholar.google.com/citations?user=PSfZDFUAAAAJ&hl=en">here</a>.
-              </p>
-            </td>
-          </tr>
-        </table>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="bar-name" href="/">{{ site.name }}</a>
+      <nav class="bar-nav">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#updates">Updates</a>
+      </nav>
+      <button class="theme" type="button" aria-label="Switch theme" aria-pressed="false">
+        <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6" />
+        </svg>
+        <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.4A8.6 8.6 0 1 1 9.6 4a7 7 0 0 0 10.4 10.4z" />
+        </svg>
+      </button>
+    </div>
+  </header>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:1.5%;width:100%;vertical-align:middle">
-              <h2 style="margin-bottom:0;">News</h2>
-              <div style="height:200px;overflow:auto;">
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                  <tr>
-                    <td style="padding:10px;width:100%;vertical-align:middle;font-size:14px;">
-                      <p><strong>November 2024.</strong> I joined Meta AI</p>
-                      <p><strong>September 2024.</strong> 3 papers accepted at NeurIPS 2024. RPO is accepted as a Spotlight!</p>
-                      <p><strong>September 2024.</strong> I gave an invited talk on LLM agents at the AutoGen event</p>
-                      <p><strong>September 2024.</strong> Our work on AIR and AIR-Bench was featured in <a href="https://www.wired.com/story/ai-models-risk-rank-studies/">Wired</a></p>
-                      <p><strong>July 2024.</strong> 1 paper is accepted at ACM CCS 2024</p>
-                      <p><strong>May 2024.</strong> LATS is accepted at ICML 2024</p>
-                      <p><strong>March 2024.</strong> 1 paper is accepted at LLM Agents @ ICLR 2024</p>
-                      <p><strong>March 2024.</strong> 3 papers accepted at SeT LLM @ ICLR 2024</p>
-                      <p><strong>March 2024.</strong> LATS reaches 600 stars on GitHub and is implemented in LangChain and LLamaIndex</p>
-                      <p><strong>February 2024.</strong> 1 paper is accepted at CVPR 2024</p>
-                      <p><strong>September 2023.</strong> 2 papers accepted at NeurIPS 2023</p>
-                      <p><strong>June 2023.</strong> 1 paper is accepted at FL @ ICML 2023</p>
-                      <p><strong>June 2023.</strong> 1 paper is accepted at ICCV 2023</p>
-                    </td>
-                  </table>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <br>
+  <main id="main">
+    {{ content }}
+  </main>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Selected Research</h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p class="foot-name">{{ site.name }}</p>
+      <ul class="foot-links">
+        {% for link in site.links %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </footer>
 
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'selected' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">paper</a> 
-              {% endif %}
-              {% if post.article %}
-              <a href="{{post.article}}">[Wired Article]</a> 
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">paper</a> /
-              {% endif %}
-              {% if post.article %}
-              <a href="{{post.article}}">[Wired]</a> 
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.article %}
-              <a href="{{post.article}}">[Wired]</a> 
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Misc</h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' and cat != 'selected' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.article %}
-              <a href="{{post.article}}">[Wired]</a> 
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 
 </html>

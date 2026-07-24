@@ -1,14 +1,43 @@
-# updated website
+# andyzhou.ai
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Personal site. Plain Jekyll, no theme, no build step beyond what GitHub Pages
+does on push to `master`.
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Editing content
 
+Content is data; the templates rarely need to change.
 
+| What | Where |
+| --- | --- |
+| Name, role, description, profile links, analytics ID | `_config.yml` |
+| Projects in "What I'm building" | `_data/work.yml` |
+| Dated entries in "Updates" | `_data/news.yml` |
+| Publications | `_data/papers.yml` |
+| Hero copy and section order | `index.html` |
+| Page shell, meta tags, nav, footer | `_layouts/default.html` |
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+A paper with `selected: true` appears on the page directly; everything else is
+folded into the "All publications" disclosure. Order in the file is the order on
+the page — newest first.
+
+## Design
+
+One stylesheet (`assets/css/site.css`), one small script
+(`assets/js/site.js`) for the theme switch and the header hairline. Dark is the
+default; the choice persists in `localStorage`. Colors, spacing, and radii are
+custom properties at the top of the stylesheet — change them there, not inline.
+
+Scroll reveals use `animation-timeline: view()`, so browsers without
+scroll-driven animations simply show the content. Nothing depends on JavaScript
+to become visible.
+
+## Local preview
+
+```bash
+bundle exec jekyll serve   # requires ruby + `gem install jekyll`
+```
+
+## Deployment
+
+`.github/workflows/jekyll-gh-pages.yml` builds and deploys on every push to
+`master`. The custom domain is in `CNAME`.

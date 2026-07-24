@@ -1,0 +1,144 @@
+# Newest first. `selected: true` surfaces a paper on the homepage; the rest live
+# behind the "all publications" disclosure.
+
+- title: Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models
+  authors: <strong>Andy Zhou</strong>, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, Yu-Xiong Wang
+  venue: ICML
+  year: 2024
+  selected: true
+  summary: >-
+    The first search algorithm for language agents, combining reasoning, acting,
+    and planning into one tree search. Now implemented in LangChain and LlamaIndex.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2310.04406
+    - label: Code
+      url: https://github.com/andyz245/LanguageAgentTreeSearch
+
+- title: Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks
+  authors: <strong>Andy Zhou</strong>, Bo Li, Haohan Wang
+  venue: NeurIPS
+  year: 2024
+  tag: Spotlight
+  selected: true
+  summary: >-
+    A defense objective and an algorithm for finding trigger tokens that enforce
+    harmless behavior, transferring across jailbreaks and models.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2401.17263
+    - label: Code
+      url: https://github.com/lapisrocks/rpo
+    - label: PDF
+      url: /pdfs/rpo.pdf
+
+- title: "AIR-Bench 2024: A Safety Benchmark Based on Risk Categories from Regulations and Policies"
+  authors: Yi Zeng*, Yu Yang*, <strong>Andy Zhou*</strong>, Jeffrey Tan*, Yuheng Tu*, Yifan Mai*, Kevin Klyman, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, Bo Li
+  venue: arXiv
+  year: 2024
+  selected: true
+  summary: >-
+    5,694 prompts spanning 314 risk categories drawn from 16 company policies and
+    8 government regulations.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2407.17436
+    - label: Wired
+      url: https://www.wired.com/story/ai-models-risk-rank-studies/
+
+- title: "KnowGraph: Knowledge-Enabled Anomaly Detection via Logical Reasoning on Graph Data"
+  authors: <strong>Andy Zhou</strong>, Xiaojun Xu, Ramesh Raghunathan, Alok Lal, Xinze Guan, Bin Yu, Bo Li
+  venue: ACM CCS
+  year: 2024
+  selected: true
+  summary: >-
+    Domain knowledge as logical constraints over an ensemble of specialized
+    models, deployed for anomaly detection on production graph data.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2410.08390
+
+- title: Distilling Out-of-Distribution Robustness from Vision-Language Foundation Models
+  authors: <strong>Andy Zhou</strong>, Jindong Wang, Haohan Wang, Yu-Xiong Wang
+  venue: NeurIPS
+  year: 2023
+  selected: true
+  summary: >-
+    Teacher gradients generate hard augmentations during distillation, yielding
+    the most OOD-robust ResNet34 and ResNet50 of their time.
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2311.01441
+    - label: Code
+      url: https://github.com/andyz245/DiscreteAdversarialDistillation
+
+- title: "RedCode: Risky Code Execution and Generation Benchmark for Code Agents"
+  authors: Chengquan Guo, Xun Liu, Chulin Xie, <strong>Andy Zhou</strong>, Yi Zeng, Zinan Lin, Dawn Song, Bo Li
+  venue: NeurIPS Datasets &amp; Benchmarks
+  year: 2024
+
+- title: Jailbreaking Large Language Models Against Moderation Guardrails via Cipher Characters
+  authors: Haibo Jin, <strong>Andy Zhou</strong>, Joe D. Menke, Haohan Wang
+  venue: NeurIPS
+  year: 2024
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2405.20413
+
+- title: Tamper-Resistant Safeguards for Open-Weight LLMs
+  authors: Rishub Tamirisa*, Bhrugu Bharathi*, Long Phan, <strong>Andy Zhou</strong>, Alice Gatti, Tarun Suresh, Maxwell Lin, Justin Wang, Rowan Wang, Ron Arel, Andy Zou, Dawn Song, Bo Li, Dan Hendrycks, Mantas Mazeika
+  venue: arXiv
+  year: 2024
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2408.00761
+
+- title: "AI Risk Categorization Decoded: From Corporate Policies to Government Regulations"
+  authors: Yi Zeng*, Kevin Klyman*, <strong>Andy Zhou</strong>, Yu Yang, Minzhou Pan, Ruoxi Jia, Dawn Song, Percy Liang, Bo Li
+  venue: GenAI &amp; Law @ ICML
+  year: 2024
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2406.17864
+    - label: Wired
+      url: https://www.wired.com/story/ai-models-risk-rank-studies/
+
+- title: Towards Robust Unlearning in LLMs
+  authors: Rishub Tamirisa, Bhrugu Bharathi, <strong>Andy Zhou</strong>, Bo Li, Mantas Mazeika
+  venue: SeT LLM @ ICLR
+  year: 2024
+
+- title: "FedSelect: Personalized Federated Learning with Customized Selection of Parameters for Fine-Tuning"
+  authors: Rishub Tamirisa, Chulin Xie, Wenxuan Bao, <strong>Andy Zhou</strong>, Ron Arel, Aviv Shamsian
+  venue: CVPR
+  year: 2024
+
+- title: "GUARD: Role-playing to Generate Natural-Language Jailbreakings to Test Guideline Adherence of Large Language Models"
+  authors: Haibo Jin*, Ruoxi Chen*, <strong>Andy Zhou</strong>, Jinyin Chen, Yang Zhang, Haohan Wang
+  venue: SeT LLM @ ICLR
+  year: 2024
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2402.03299
+    - label: PDF
+      url: /pdfs/guard.pdf
+
+- title: "YouTubePD: A Multimodal Benchmark for Parkinson's Disease Analysis"
+  authors: <strong>Andy Zhou*</strong>, Samuel Li*, Pranav Sriram*, Xiang Li*, Jiahua Dong*, Ansh Sharma, Yuanyi Zhong, Shirui Luo, Volodymyr Kindratenko, George Heintz, Christopher Zallek, Yu-Xiong Wang
+  venue: NeurIPS Datasets &amp; Benchmarks
+  year: 2023
+  links:
+    - label: OpenReview
+      url: https://openreview.net/forum?id=AIeeXKsspI
+    - label: PDF
+      url: /pdfs/pd.pdf
+
+- title: "A Sentence Speaks a Thousand Images: Domain Generalization through Distilling CLIP with Language Guidance"
+  authors: Zeyi Huang, <strong>Andy Zhou</strong>, Zijian Lin, Mu Cai, Haohan Wang, Yong Jae Lee
+  venue: ICCV
+  year: 2023
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2309.12530
+    - label: Code
+      url: https://github.com/OoDBag/RISE

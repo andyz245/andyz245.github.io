@@ -1,0 +1,38 @@
+- date: 2026-05-19
+  text: >-
+    We released <a href="https://www.intology.ai/blog/nanogpt-bench">NanoGPT-Bench</a>,
+    an evaluation of whether coding agents can actually do research. The best one
+    recovers 9.3% of five months of human progress.
+
+- date: 2026-01-16
+  text: >-
+    Locus set a world record on the human
+    <a href="https://github.com/KellerJordan/modded-nanogpt">NanoGPT Speedrun</a>
+    leaderboard with a fused Triton kernel it designed on its own. Later human
+    records built on top of it.
+
+- date: 2025-11-19
+  text: >-
+    We introduced <a href="https://www.intology.ai/blog/previewing-locus">Locus</a>,
+    the first AI system to outperform human experts at AI R&amp;D.
+
+- date: 2025-05-27
+  text: >-
+    <a href="https://www.intology.ai/blog/zochi-acl">Zochi published at ACL 2025 Main</a>
+    — the first AI system to independently pass peer review at an A* venue.
+
+- date: 2025-03-17
+  text: >-
+    We launched Intology and published the
+    <a href="https://www.intology.ai/blog/zochi-tech-report">Zochi technical report</a>.
+
+- date: 2024-09-25
+  text: >-
+    Three papers at NeurIPS 2024, with RPO accepted as a Spotlight (top 3%), and
+    our AIR-Bench work was covered by
+    <a href="https://www.wired.com/story/ai-models-risk-rank-studies/">Wired</a>.
+
+- date: 2024-05-01
+  text: >-
+    LATS was accepted at ICML 2024 and is now implemented in LangChain and
+    LlamaIndex.
