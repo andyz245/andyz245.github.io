@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -23,14 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap">
   <link rel="stylesheet" href="/assets/css/site.css">
-
-  <script>
-    // Dark by default; resolved before first paint so the page never flashes.
-    document.documentElement.dataset.theme =
-      localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
-  </script>
 
   <script type="application/ld+json">
     {
@@ -62,19 +56,10 @@
     <div class="bar-inner">
       <a class="bar-name" href="/">{{ site.name }}</a>
       <nav class="bar-nav">
-        <a href="#work">Work</a>
-        <a href="#research">Research</a>
-        <a href="#updates">Updates</a>
+        <a href="#program">Program</a>
+        <a href="#research">Publications</a>
+        <a href="#updates">Writing</a>
       </nav>
-      <button class="theme" type="button" aria-label="Switch theme" aria-pressed="false">
-        <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="4.2" />
-          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6" />
-        </svg>
-        <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 14.4A8.6 8.6 0 1 1 9.6 4a7 7 0 0 0 10.4 10.4z" />
-        </svg>
-      </button>
     </div>
   </header>
 

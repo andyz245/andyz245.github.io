@@ -22,10 +22,10 @@ the page — newest first.
 
 ## Design
 
-One stylesheet (`assets/css/site.css`), one small script
-(`assets/js/site.js`) for the theme switch and the header hairline. Dark is the
-default; the choice persists in `localStorage`. Colors, spacing, and radii are
-custom properties at the top of the stylesheet — change them there, not inline.
+One stylesheet (`assets/css/site.css`) defines a light, editorial design, and one
+small script (`assets/js/site.js`) adds the header hairline on scroll. Colors and
+spacing are custom properties at the top of the stylesheet — change them there,
+not inline.
 
 Scroll reveals use `animation-timeline: view()`, so browsers without
 scroll-driven animations simply show the content. Nothing depends on JavaScript

@@ -5,17 +5,18 @@ layout: default
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-text">
-      <p class="eyebrow">{{ site.location }} &middot; Intology</p>
+      <p class="eyebrow">Artificial intelligence &middot; scientific discovery</p>
       <h1>{{ site.name }}</h1>
-      <p class="lede">I build AI systems that do science.</p>
+      <p class="lede">I study how AI systems can conduct scientific research.</p>
       <p>
-        I'm a co-founder of <a href="https://www.intology.ai">Intology</a>, a research lab automating the process of
-        discovery. We build Artificial Scientists: systems that read the literature, form a hypothesis, run the
-        experiments, and write up what they found — with no human in the loop.
+        I'm a co-founder of <a href="https://www.intology.ai">Intology</a>, a research lab developing Artificial
+        Scientists: systems that read the literature, form hypotheses, run experiments, and communicate what they
+        discover.
       </p>
       <p>
-        Two exist so far. <a href="#work">Zochi</a> was the first AI system to pass peer review at a top-tier venue.
-        <a href="#work">Locus</a> is the first to outperform human experts at AI R&amp;D.
+        Our work asks a basic question: what would it take for an AI system to make a genuine scientific contribution?
+        <a href="#program">Zochi</a> was the first AI system to pass peer review at a top-tier venue, and
+        <a href="#program">Locus</a> is the first to outperform human experts at AI R&amp;D.
       </p>
       <p class="quiet">
         Before Intology I did research at Meta and Virtue AI, and founded
@@ -31,41 +32,59 @@ layout: default
   </div>
 </section>
 
-<section id="work" class="band">
+<section id="program" class="band">
   <div class="wrap">
-    <h2 class="label">What I'm building</h2>
-    <div class="cards">
-      {% for item in site.data.work %}
-      <article class="card reveal">
-        <header class="card-head">
-          <h3>{{ item.name }}</h3>
-          <p class="card-kind">{{ item.kind }}</p>
-          <p class="card-period">{{ item.period }}</p>
-        </header>
-        <p class="card-body">{{ item.body }}</p>
-        <ul class="chips">
-          {% for stat in item.stats %}
-          <li>{{ stat }}</li>
-          {% endfor %}
-        </ul>
-        <ul class="card-links">
-          {% for link in item.links %}
-          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-          {% endfor %}
-        </ul>
-      </article>
-      {% endfor %}
+    <div class="section-head">
+      <p class="section-number">01</p>
+      <div>
+        <h2>Research program</h2>
+        <p>Artificial scientists, autonomous experimentation, and evaluations of genuine research ability.</p>
+      </div>
     </div>
+    <ol class="projects">
+      {% for item in site.data.work %}
+      <li class="project reveal">
+        <article>
+          <header class="project-head">
+            <div>
+              <p class="project-kind">{{ item.kind }}</p>
+              <h3>{{ item.name }}</h3>
+            </div>
+            <p class="project-period">{{ item.period }}</p>
+          </header>
+          <p class="project-body">{{ item.body }}</p>
+          <div class="project-detail">
+            <p class="detail-label">Selected results</p>
+            <ul class="results">
+              {% for stat in item.stats %}
+              <li>{{ stat }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <ul class="project-links">
+            {% for link in item.links %}
+            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </article>
+      </li>
+      {% endfor %}
+    </ol>
   </div>
 </section>
 
 <section id="research" class="band">
   <div class="wrap">
-    <h2 class="label">Selected research</h2>
-    <p class="note">
-      Agents, robustness, and AI safety, from before Intology. The complete list lives on
-      <a href="https://scholar.google.com/citations?user=PSfZDFUAAAAJ&amp;hl=en">Google Scholar</a>.
-    </p>
+    <div class="section-head">
+      <p class="section-number">02</p>
+      <div>
+        <h2>Selected publications</h2>
+        <p>
+          Agents, robustness, and AI safety. The complete list is on
+          <a href="https://scholar.google.com/citations?user=PSfZDFUAAAAJ&amp;hl=en">Google Scholar</a>.
+        </p>
+      </div>
+    </div>
 
     <ol class="papers">
       {% for paper in site.data.papers %}
@@ -119,14 +138,24 @@ layout: default
 
 <section id="updates" class="band">
   <div class="wrap">
-    <h2 class="label">Updates</h2>
-    <ol class="updates">
+    <div class="section-head">
+      <p class="section-number">03</p>
+      <div>
+        <h2>Writing from Intology</h2>
+        <p>Research notes, technical reports, and results from the lab.</p>
+      </div>
+    </div>
+    <ol class="essays">
       {% for item in site.data.news %}
-      <li class="update reveal">
-        <p class="update-date">{{ item.date | date: "%b %Y" }}</p>
-        <p class="update-text">{{ item.text }}</p>
+      <li class="essay reveal">
+        <p class="essay-date">{{ item.date | date: "%b %Y" }}</p>
+        <div>
+          <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+          <p>{{ item.summary }}</p>
+        </div>
       </li>
       {% endfor %}
     </ol>
+    <p class="all-writing"><a href="https://www.intology.ai/blog">Read all Intology writing</a></p>
   </div>
 </section>
