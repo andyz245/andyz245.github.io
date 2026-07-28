@@ -24,7 +24,6 @@
   --accent-wash: rgba(242, 166, 90, 0.13);
   --shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.9);
   --grain: 0.04;
-  --photo-tone: grayscale(0.2) contrast(1.02);
   color-scheme: dark;
 }
 
@@ -40,7 +39,6 @@
   --accent-wash: rgba(176, 98, 26, 0.09);
   --shadow: 0 20px 44px -28px rgba(24, 18, 8, 0.3);
   --grain: 0;
-  --photo-tone: none;
   color-scheme: light;
 }
 
@@ -327,10 +325,7 @@ a:hover {
 
 .hero-inner {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 13rem;
-  gap: clamp(1.5rem, 5vw, 3.5rem);
-  align-items: start;
+  max-width: 40rem;
 }
 
 .eyebrow {
@@ -408,26 +403,6 @@ a:hover {
 .hero-links li:first-child a {
   border-color: var(--accent);
   color: var(--accent);
-}
-
-.hero-photo {
-  margin: 0;
-}
-
-.hero-photo img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: 50% 40%;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  filter: var(--photo-tone);
-  transition: filter 0.4s ease, transform 0.4s ease;
-}
-
-.hero-photo img:hover {
-  filter: none;
-  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -772,20 +747,6 @@ a:hover {
    ========================================================================== */
 
 @media (max-width: 46rem) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-photo {
-    order: -1;
-    width: 5.5rem;
-  }
-
-  .hero-photo img {
-    aspect-ratio: 1;
-    border-radius: 50%;
-  }
-
   .bar-nav {
     display: none;
   }
