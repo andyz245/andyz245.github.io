@@ -1,161 +1,21 @@
 ---
-layout: default
+layout: null
 ---
-
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div class="hero-text">
-      <p class="eyebrow">Artificial intelligence &middot; scientific discovery</p>
-      <h1>{{ site.name }}</h1>
-      <p class="lede">I study how AI systems can conduct scientific research.</p>
-      <p>
-        I'm a co-founder of <a href="https://www.intology.ai">Intology</a>, a research lab developing Artificial
-        Scientists: systems that read the literature, form hypotheses, run experiments, and communicate what they
-        discover.
-      </p>
-      <p>
-        Our work asks a basic question: what would it take for an AI system to make a genuine scientific contribution?
-        <a href="#program">Zochi</a> was the first AI system to pass peer review at a top-tier venue, and
-        <a href="#program">Locus</a> is the first to outperform human experts at AI R&amp;D.
-      </p>
-      <p class="quiet">
-        Before Intology I did research at Meta and Virtue AI, and founded
-        <a href="https://lapis.rocks/">Lapis Labs</a>, a student-led group that published 20+ papers with collaborators
-        including Google DeepMind, the Center for AI Safety, and IBM Research.
-      </p>
-      <ul class="hero-links">
-        {% for link in site.links %}
-        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="program" class="band">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="section-number">01</p>
-      <div>
-        <h2>Research program</h2>
-        <p>Artificial scientists, autonomous experimentation, and evaluations of genuine research ability.</p>
-      </div>
-    </div>
-    <ol class="projects">
-      {% for item in site.data.work %}
-      <li class="project reveal">
-        <article>
-          <header class="project-head">
-            <div>
-              <p class="project-kind">{{ item.kind }}</p>
-              <h3>{{ item.name }}</h3>
-            </div>
-            <p class="project-period">{{ item.period }}</p>
-          </header>
-          <p class="project-body">{{ item.body }}</p>
-          <div class="project-detail">
-            <p class="detail-label">Selected results</p>
-            <ul class="results">
-              {% for stat in item.stats %}
-              <li>{{ stat }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-          <ul class="project-links">
-            {% for link in item.links %}
-            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-            {% endfor %}
-          </ul>
-        </article>
-      </li>
-      {% endfor %}
-    </ol>
-  </div>
-</section>
-
-<section id="research" class="band">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="section-number">02</p>
-      <div>
-        <h2>Selected publications</h2>
-        <p>
-          Agents, robustness, and AI safety. The complete list is on
-          <a href="https://scholar.google.com/citations?user=PSfZDFUAAAAJ&amp;hl=en">Google Scholar</a>.
-        </p>
-      </div>
-    </div>
-
-    <ol class="papers">
-      {% for paper in site.data.papers %}
-      {% if paper.selected %}
-      <li class="paper reveal">
-        <h3 class="paper-title">{{ paper.title }}</h3>
-        <p class="paper-meta">
-          <span class="venue">{{ paper.venue }} {{ paper.year }}</span>
-          {% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
-        </p>
-        <p class="paper-authors">{{ paper.authors }}</p>
-        {% if paper.summary %}<p class="paper-summary">{{ paper.summary }}</p>{% endif %}
-        {% if paper.links %}
-        <ul class="paper-links">
-          {% for link in paper.links %}
-          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ol>
-
-    <details class="more">
-      <summary>All publications ({{ site.data.papers | size }})</summary>
-      <ol class="papers papers-compact">
-        {% for paper in site.data.papers %}
-        {% unless paper.selected %}
-        <li class="paper">
-          <h3 class="paper-title">{{ paper.title }}</h3>
-          <p class="paper-meta">
-            <span class="venue">{{ paper.venue }} {{ paper.year }}</span>
-            {% if paper.tag %}<span class="tag">{{ paper.tag }}</span>{% endif %}
-          </p>
-          <p class="paper-authors">{{ paper.authors }}</p>
-          {% if paper.links %}
-          <ul class="paper-links">
-            {% for link in paper.links %}
-            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </li>
-        {% endunless %}
-        {% endfor %}
-      </ol>
-    </details>
-  </div>
-</section>
-
-<section id="updates" class="band">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="section-number">03</p>
-      <div>
-        <h2>Writing from Intology</h2>
-        <p>Research notes, technical reports, and results from the lab.</p>
-      </div>
-    </div>
-    <ol class="essays">
-      {% for item in site.data.news %}
-      <li class="essay reveal">
-        <p class="essay-date">{{ item.date | date: "%b %Y" }}</p>
-        <div>
-          <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
-          <p>{{ item.summary }}</p>
-        </div>
-      </li>
-      {% endfor %}
-    </ol>
-    <p class="all-writing"><a href="https://www.intology.ai/blog">Read all Intology writing</a></p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andy Zhou</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.andyzhou.ai/">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #fff;
+    }
+  </style>
+</head>
+<body></body>
+</html>
