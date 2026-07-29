@@ -20,10 +20,10 @@ links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/andy-zhou-679376206
 
-google_analytics: G-E00L9PT3V9
+# Site is offline / intentionally unlisted.
+google_analytics: false
 
-plugins:
-  - jekyll-sitemap
+plugins: []
 
 exclude:
   - LICENSE
