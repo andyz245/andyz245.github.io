@@ -2,17 +2,20 @@
   kind: Artificial Scientist for AI R&amp;D
   period: 2025 —
   body: >-
-    A long-horizon research system that runs its own experiments for days at a
-    time. Locus is the first AI system to beat human experts on RE-Bench given
-    the same time and compute, and in January 2026 it set a world record on the
-    human NanoGPT Speedrun leaderboard with a fused Triton kernel it designed,
-    implemented, and debugged itself.
+    A long-horizon research system that plans and steers many experiments in
+    parallel over multi-day horizons. Locus was the first AI system to beat
+    human experts on RE-Bench at equal time and compute; it now leads
+    PostTrainBench, surpasses the official human-tuned Qwen3-1.7B instruct
+    checkpoint under PostTrainBench+, and has post-trained a model deployed in
+    production.
   stats:
-    - 1.30 vs 1.27 human expert on RE-Bench
-    - SOTA on KernelBench and MLE-Bench Lite
-    - 64-hour autonomous runs
+    - 44.7 PostTrainBench SOTA (verified)
+    - 51.6 on PostTrainBench+, above Qwen3-1.7B-Instruct
+    - 4th among accounts entered in all live prize-money Kaggle competitions
   links:
-    - label: Results
+    - label: Post-training results
+      url: https://www.intology.ai/blog/scaling-automated-post-training
+    - label: Earlier preview
       url: https://www.intology.ai/blog/previewing-locus
     - label: Speedrun record
       url: https://github.com/KellerJordan/modded-nanogpt/pull/199

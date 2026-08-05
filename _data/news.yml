@@ -1,3 +1,10 @@
+- date: 2026-08-03
+  title: Scaling Automated Post-Training
+  summary: >-
+    Locus leads PostTrainBench, surpasses human-tuned models under PostTrainBench+,
+    and post-trains a production model for Bubble.
+  url: https://www.intology.ai/blog/scaling-automated-post-training
+
 - date: 2026-05-19
   title: Can AI Agents Actually Do Research?
   summary: >-
