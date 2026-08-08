@@ -2,12 +2,11 @@
   kind: Artificial Scientist for AI R&amp;D
   period: 2025 —
   body: >-
-    A long-horizon research system that plans and steers many experiments in
-    parallel over multi-day horizons. Locus was the first AI system to beat
-    human experts on RE-Bench at equal time and compute; it now leads
-    PostTrainBench, surpasses the official human-tuned Qwen3-1.7B instruct
-    checkpoint under PostTrainBench+, and has post-trained a model deployed in
-    production.
+    Zochi's successor, Locus, is a long-horizon research system that plans and
+    steers many experiments in parallel over multi-day horizons. It leads
+    PostTrainBench, and under PostTrainBench+ surpasses the official
+    Qwen3-1.7B-Instruct checkpoint across the benchmark suite. Locus has also
+    post-trained a model deployed in production.
   stats:
     - 44.7 PostTrainBench SOTA (verified)
     - 51.6 on PostTrainBench+, above Qwen3-1.7B-Instruct
